@@ -16,6 +16,7 @@ import * as React from 'react';
 
 import DropDown, {DropDownItem} from '../../../../../ui/DropDown';
 
+/*
 const ELEMENT_FORMAT_OPTIONS: {
   [key: string]: {icon: string; name: string};
 } = {
@@ -36,10 +37,11 @@ const ELEMENT_FORMAT_OPTIONS: {
     name: 'Right Align',
   },
 };
+ */
 
 export const ElementFormatDropdown = ({
   editor,
-  value,
+  // value,
   isRTL,
   disabled = false,
 }: {
@@ -50,8 +52,8 @@ export const ElementFormatDropdown = ({
 }) => (
   <DropDown
     disabled={disabled}
-    buttonLabel={ELEMENT_FORMAT_OPTIONS[value].name}
-    buttonIconClassName={`icon ${ELEMENT_FORMAT_OPTIONS[value].icon}`}
+    // buttonLabel={ELEMENT_FORMAT_OPTIONS[value].name}
+    // buttonIconClassName={`icon ${ELEMENT_FORMAT_OPTIONS[value].icon}`}
     buttonClassName="toolbar-item spaced alignment"
     buttonAriaLabel="Formatting options for text alignment">
     <DropDownItem

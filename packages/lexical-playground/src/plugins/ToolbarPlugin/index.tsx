@@ -67,7 +67,7 @@ import {TextColorPickerButton} from './_components/button/text-color-picker-butt
 import {UnderlineButton} from './_components/button/underline-button';
 import {UndoButton} from './_components/button/undo-button';
 
-const blockTypeToBlockName = {
+export const blockTypeToBlockName = {
   bullet: 'Bulleted List',
   check: 'Check List',
   code: 'Code Block',
@@ -82,7 +82,7 @@ const blockTypeToBlockName = {
   quote: 'Quote',
 };
 
-const rootTypeToRootName = {
+export const rootTypeToRootName = {
   root: 'Root',
   table: 'Table',
 };
